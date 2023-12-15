@@ -26,8 +26,8 @@ const Home = () => {
             exit='hidden'
             className='h1'
           >
-            Transforming Ideas <br /> Into{' '}
-            <span className='text-accent'>Digital Reality</span>
+            Computer  
+            <span className='text-accent'>   Engineer</span>
           </motion.h1>
           {/* subtitle */}
           <motion.p
@@ -37,9 +37,12 @@ const Home = () => {
             exit='hidden'
             className='max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16'
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
-            nostrum quam reprehenderit vero, tenetur voluptatem nulla aut
-            aspernatur dolores ut.
+            Hello! I am Bülent Oral, a Computer Engineer who produces
+             innovative solutions. As a professional equipped with 
+             modern technologies and constantly improving myself, 
+             I develop creative and effective strategies to solve complex 
+             software problems. Take a look at my projects and contact me for
+              a service that exceeds industry standards!
           </motion.p>
           {/* btn */}
           <div className='flex justify-center xl:hidden relative'>

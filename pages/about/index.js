@@ -2,19 +2,19 @@ import React, { useState } from 'react';
 
 // icons
 import {
-  FaHtml5,
-  FaCss3,
-  FaJs,
-  FaReact,
-  FaWordpress,
+  FaAndroid,
+  FaJava,
   FaFigma,
+  FaGit
+  
 } from 'react-icons/fa';
 
 import {
-  SiNextdotjs,
-  SiFramer,
-  SiAdobexd,
-  SiAdobephotoshop,
+  SiSqlite,
+  SiKotlin,
+  SiFirebase,
+  SiMicrosoftsqlserver,
+  SiMysql,
 } from 'react-icons/si';
 
 //  about data
@@ -23,67 +23,68 @@ export const aboutData = [
     title: 'skills',
     info: [
       {
-        title: 'Web Development',
+        title: 'Mobil Development',
         icons: [
-          <FaHtml5 />,
-          <FaCss3 />,
-          <FaJs />,
-          <FaReact />,
-          <SiNextdotjs />,
-          <SiFramer />,
-          <FaWordpress />,
+          <FaAndroid />,
+          <SiKotlin />,
+          <FaJava />,
+          
         ],
       },
       {
         title: 'UI/UX Design',
-        icons: [<FaFigma />, <SiAdobexd />, <SiAdobephotoshop />],
+        icons: [<FaFigma />],
+      },
+      {
+        title: 'Database Management',
+        icons: [< SiMicrosoftsqlserver/>,<SiMysql/>,<SiSqlite/>,<SiFirebase/>],
+      },
+      {
+        title: 'Version Control',
+        icons: [<FaGit />],
       },
     ],
   },
-  {
-    title: 'awards',
-    info: [
-      {
-        title: 'Webby Awards - Honoree',
-        stage: '2011 - 2012',
-      },
-      {
-        title: 'Adobe Design Achievement Awards - Finalist',
-        stage: '2009 - 2010',
-      },
-    ],
-  },
+  
   {
     title: 'experience',
     info: [
       {
-        title: 'UX/UI Designer - XYZ Company',
-        stage: '2012 - 2023',
+        title: 'Android Developer Intern  İnnova Bilişim Çözümleri',
+        stage: '2022 (20 work day)' ,
+        projects: 'Studies were carried out on Design Patterns, Software Architectural Pattern, Kotlin, Android Development. Developed To Do application using Firebase and Kotlin.'
       },
       {
-        title: 'Web Developer - ABC Agency',
-        stage: '2010 - 2012',
+        title: 'Software Engineer Intern- Başarsoft Bilgi Teknolojileri',
+        stage: '12/2022 09/2023',
+        projects: 'Running Tracker App was developed using Kotlin, Firebase and OSM library. Work was carried out on the server and android application sides of Sedaş and Gediz applications within Edabis, using Java and Oracle Database.API requests in the GFK TURKEY application were rewritten with Retrofit.'
+        
       },
-      {
-        title: 'Intern - DEF Corporation',
-        stage: '2008 - 2010',
-      },
+      
     ],
   },
   {
     title: 'credentials',
     info: [
       {
-        title: 'Web Development - ABC University, LA, CA',
-        stage: '2011',
+        title: 'Spring Bootcamp - TÜBİTAK BİLGEM YTE',
+        stage: '2023',
       },
       {
-        title: 'Computer Science Diploma - AV Technical Institute',
-        stage: '2009',
+        title: 'Java Bootcamp - TÜBİTAK BİLGEM YTE',
+        stage: '2023',
       },
       {
-        title: 'Certified Graphic Designer - ABC Institute, Los Angeles, CA',
-        stage: '2006',
+        title: 'Microservis Architecture Bootcamp - TÜBİTAK BİLGEM YTE',
+        stage: '2023',
+      },
+      {
+        title: 'Mock-Up Figma Bootcamp - TÜBİTAK BİLGEM YTE',
+        stage: '2023',
+      },
+      {
+        title: 'User Experience Bootcamp - TÜBİTAK BİLGEM YTE',
+        stage: '2023',
       },
     ],
   },
@@ -126,8 +127,7 @@ const About = () => {
             exit='hidden'
             className='h2'
           >
-            Captivating <span className='text-accent'>stories</span> birth
-            magnificent designs.
+            Code with <span className='text-accent'>passion</span> engineer your future.
           </motion.h2>
           <motion.p
             variants={fadeIn('right', 0.4)}
@@ -136,57 +136,20 @@ const About = () => {
             exit='hidden'
             className='max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0'
           >
-            10 years ago, I began freelancing as a developer. Since then, I've
-            done remote work for agencies, counsulted for startups, and
-            collaborated on digital products for business and consumer use.
+            As a senior Computer Engineering student, I have
+             honed my skills in developing mobile applications 
+             using Java and Kotlin for Android platforms. With
+              approximately one year of experience as an intern,
+               I've cultivated a robust understanding of 
+               database operations, management, and Android development, 
+               enhancing my technical proficiency across multiple domains.
+               Recently, I've expanded my expertise beyond mobile development
+                to embrace Spring Boot, furthering my knowledge and capabilities
+                 in software engineering. I am passionate about self-improvement
+                  and continuously seek to learn and master new technologies.
           </motion.p>
           {/* counters */}
-          <motion.div
-            variants={fadeIn('right', 0.6)}
-            initial='hidden'
-            animate='show'
-            exit='hidden'
-            className='hidden md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-8'
-          >
-            <div className='flex flex-1 xl:gap-x-6'>
-              {/* experience */}
-              <div className='relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0'>
-                <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
-                  <CountUp start={0} end={10} duration={5} /> +
-                </div>
-                <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>
-                  Years of experience
-                </div>
-              </div>
-              {/* clients */}
-              <div className='relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0'>
-                <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
-                  <CountUp start={0} end={250} duration={5} /> +
-                </div>
-                <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>
-                  Satisfied clients
-                </div>
-              </div>
-              {/* projects */}
-              <div className='relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0'>
-                <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
-                  <CountUp start={0} end={650} duration={5} /> +
-                </div>
-                <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>
-                  Finished projects
-                </div>
-              </div>
-              {/* awards */}
-              <div className='relative flex-1'>
-                <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
-                  <CountUp start={0} end={8} duration={5} /> +
-                </div>
-                <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>
-                  Winning awards
-                </div>
-              </div>
-            </div>
-          </motion.div>
+         
         </div>
         {/* info */}
         <motion.div
@@ -223,6 +186,14 @@ const About = () => {
                   <div className='font-light mb-2 md:mb-0'>{item.title}</div>
                   <div className='hidden md:flex'>-</div>
                   <div>{item.stage}</div>
+                  {/* projects */}
+                  {/* Projects bilgisini yalnızca 'experience' bölümü için göster */}
+                  {aboutData[index].title === 'experience' && item.projects && (
+                    <div className='flex flex-col text-left'>
+                      <span className='text-sm text-accent'>Projects and Works:</span>
+                      <span className='text-sm'>{item.projects}</span>
+                    </div>
+                  )}
                   <div className='flex gap-x-4'>
                     {/* icons */}
                     {item.icons?.map((icon, itemIndex) => {

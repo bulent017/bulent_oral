@@ -5,22 +5,23 @@ export const workSlider = {
       images: [
         {
           title: 'title',
-          path: '/thumb1.jpg',
+          path: '/thumb1_o1.jpg',
         },
         {
           title: 'title',
-          path: '/thumb2.jpg',
+          path: '/thumb2_o.jpg',
         },
         {
           title: 'title',
-          path: '/thumb3.jpg',
+          path: '/thumb3_o.jpg',
         },
         {
           title: 'title',
-          path: '/thumb4.jpg',
+          path: '/thumb4_o.jpg',
         },
       ],
     },
+    /*
     {
       images: [
         {
@@ -41,6 +42,7 @@ export const workSlider = {
         },
       ],
     },
+    */
   ],
 };
 

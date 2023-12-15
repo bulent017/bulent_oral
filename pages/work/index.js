@@ -31,8 +31,14 @@ const Work = () => {
               exit='hidden'
               className='mb-4 max-w-[400px] mx-auto lg:mx-0'
             >
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. A
-              eveniet dignissimos distinctio tempore harum laudantium.
+              My current career, combined with my university and internship
+               experiences, has primarily focused on native Android application 
+               development. During this time, I have developed numerous special
+                projects as well as assignments given at my school. I believe 
+                these works will reflect my passion and technical skills in developing 
+                applications on the Android platform. You can explore the details and 
+                codes of my projects through the relevant links on my GitHub account.
+
             </motion.p>
           </div>
 
