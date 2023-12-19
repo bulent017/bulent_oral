@@ -100,6 +100,7 @@ import { fadeIn } from '../../variants';
 
 // counter
 import CountUp from 'react-countup';
+import AnimatedButton from '../../components/AnimatedButton';
 
 const About = () => {
   const [index, setIndex] = useState(0);
@@ -115,7 +116,7 @@ const About = () => {
         exit='hidden'
         className='hidden xl:flex absolute bottom-0 -left-[370px]'
       >
-        <Avatar />
+        {/*<Avatar />*/}
       </motion.div>
       <div className='container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6'>
         {/* text */}
@@ -147,9 +148,10 @@ const About = () => {
                 to embrace Spring Boot, furthering my knowledge and capabilities
                  in software engineering. I am passionate about self-improvement
                   and continuously seek to learn and master new technologies.
+                  
           </motion.p>
           {/* counters */}
-         
+         <AnimatedButton/>
         </div>
         {/* info */}
         <motion.div
